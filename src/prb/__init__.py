@@ -27,6 +27,7 @@ print(f"P(Y=0) = {p_y0 :.4f}")
 p_c1_y1 = p_y1_c1*p_c[1]/p_y1
 print(f"P(C=1|Y=1) = {p_c1_y1 :.4f}")
 
+
 #Joint distribtion P(Y,C,S)
 p_y_c_s = {}
 
