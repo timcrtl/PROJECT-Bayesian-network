@@ -38,18 +38,7 @@ gantt
     Rendu final prévisionnel                        :milestone, crit, rendu, 2027-01-15, 0d
 ```
 
-- Les travaux réalisés sont détaillés dans le journal de projet. Le 18 novembre
-  correspond au constat de présence des scripts Python. Leur intégration et
-  leur vérification font partie du prototype à consolider.
-- Le jalon du 27 novembre sert de repère pour arbitrer le cas d'usage avec
-  l'encadrant. Le calendrier sera ajusté après la première réunion et selon les
-  disponibilités de fin d'année.
-- La démonstration prévoit un jeu synthétique si les données publiques ne
-  permettent pas d'estimer les probabilités nécessaires au graphe retenu.
-  Les tableaux ENP et leurs CPT locales alimentent le travail descriptif.
-- La période du 21 décembre au 3 janvier sert de marge. Les expériences
-  nécessaires sont prévues avant cette période et la relecture finale débute le
-  4 janvier.
+
 
 ## Priorités proposées
 
