@@ -1,9 +1,7 @@
 # Gantt prévisionnel du projet
 
 Mise à jour du 18 novembre 2026. Le rendu est prévu à la mi-janvier 2027.
-Le **vendredi 15 janvier 2027** sert de date de travail, à confirmer avec
-l'encadrant. Le symbole ✓ signale les travaux documentés comme réalisés.
-Les dates des autres tâches restent indicatives.
+Le **vendredi 15 janvier 2027** .
 
 ```mermaid
 gantt
