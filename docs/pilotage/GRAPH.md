@@ -12,10 +12,6 @@ flowchart LR
 
 ## Réseau à 10 variables
 
-Ce graphe reprend la structure déclarée dans le [script Python](../../src/prb/10v.py).
-Certaines tables de probabilités conditionnelles restent à estimer.
-
-```mermaid
 flowchart LR
     A["A · Âge maternel"] --> G["G · Type de grossesse"]
     P["P · Parité"] --> C["C · Antécédent de césarienne"]
