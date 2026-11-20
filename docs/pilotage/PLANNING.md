@@ -1,44 +1,45 @@
-# Gantt prévisionnel du projet
+# Planning prévisionnel du projet
 
-Mise à jour du 18 novembre 2026. Le rendu est prévu à la mi-janvier 2027.
-Le **vendredi 15 janvier 2027** .
+Mise à jour du 20 novembre 2026. Le projet porte sur le diagnostic de
+sous-extrusion et l’aide à la décision lors du contrôle de pièces imprimées en 3D.
+Le **vendredi 15 janvier 2027** sert de date de travail, à confirmer avec
+l’encadrant.
 
 ```mermaid
 gantt
-    title Réseaux bayésiens appliqués à la maternité
+    title Réseaux bayésiens pour le contrôle qualité en impression 3D
     dateFormat YYYY-MM-DD
     axisFormat %d/%m
     tickInterval 1week
     todayMarker off
 
     section Travaux réalisés
-    ✓ Stanford revu et notes sur les supports       :done, stanford, 2026-11-12, 1d
-    ✓ Cadrage initial et inventaire des variables   :done, inventaire, 2026-11-12, 2d
-    ✓ Modèle pédagogique à trois variables          :done, exemple, 2026-11-13, 1d
-    ✓ Recherche de sources et sélection candidate   :done, sources, 2026-11-15, 3d
-    ✓ Classeur ENP 2021 et CPT locales               :done, extraction, 2026-11-17, 1d
-    ✓ Réseau à dix variables et module instruments  :done, reseau, 2026-11-17, 1d
-    ✓ Premiers scripts Python repérés               :milestone, done, scripts, 2026-11-18, 0d
+    Notes sur les supports Stanford                  :done, stanford, 2026-11-12, 1d
+    Choix du diagnostic de sous-extrusion             :milestone, done, sujet, 2026-11-20, 0d
+    Graphe à six variables et CPT fictives            :done, modele, 2026-11-20, 1d
+    Premier générateur de pièces synthétiques         :done, generateur, 2026-11-20, 1d
 
     section Cadrage et prototype
-    Consolider le cas et arbitrer les données       :cadrage, 2026-11-18, 2026-11-28
-    Compléter les exercices ciblés                  :formation, 2026-11-18, 2026-11-28
-    Périmètre et critères à valider                 :milestone, validation, 2026-11-27, 0d
-    Consolider le graphe et vérifier les CPT        :graphe, 2026-11-30, 2026-12-05
-    Intégrer inférence et apprentissage             :prototype, 2026-12-01, 2026-12-12
-    Démonstration minimale reproductible           :milestone, demo, 2026-12-11, 0d
+    Préciser les mesures et les critères d’évaluation :cadrage, 2026-11-23, 2026-11-28
+    Définir les seuils et le contrôle de confirmation :seuils, 2026-11-23, 2026-11-28
+    Vérifier l’inférence exacte sur les cas de référence :inference, 2026-11-30, 2026-12-05
+    Estimer les CPT à partir des données synthétiques :apprentissage, 2026-12-07, 2026-12-11
+    Démonstration minimale reproductible             :milestone, demo, 2026-12-11, 0d
 
     section Évaluation et rendu
-    Expériences et analyse des limites              :evaluation, 2026-12-14, 2026-12-19
-    Rédaction progressive du rapport pédagogique    :rapport, 2026-11-23, 2027-01-09
-    Marge de fin d’année                            :marge, 2026-12-21, 2027-01-04
-    Dépôt public et partage du lien                 :depot, 2026-11-23, 2026-11-28
-    Suivi, documentation et versionnement          :suivi, 2026-11-18, 2027-01-15
-    Relecture, reproduction et préparation de la démo :relecture, 2027-01-04, 2027-01-15
-    Rendu final prévisionnel                        :milestone, crit, rendu, 2027-01-15, 0d
+    Évaluer indices manquants et données rares        :evaluation, 2026-12-14, 2026-12-19
+    Rédiger le rapport pédagogique                   :rapport, 2026-11-23, 2027-01-09
+    Marge de fin d’année                             :marge, 2026-12-21, 2027-01-04
+    Relecture et reproduction de la démonstration    :relecture, 2027-01-04, 2027-01-15
+    Rendu final prévisionnel                         :milestone, crit, rendu, 2027-01-15, 0d
 ```
 
-
+Le [graphe](GRAPH.md) décrit le diagnostic et les trois actions possibles.
+Les [CPT](CPT.md) servent de référence pour simuler les pièces et vérifier
+l’apprentissage. L’évaluation compare les paramètres estimés aux paramètres
+de simulation et vérifie le calcul du diagnostic lorsque certains indices
+sont indisponibles. Gibbs et EM restent des extensions possibles pour
+l’inférence approchée et l’apprentissage sur données incomplètes.
 
 ## Priorités proposées
 
@@ -54,7 +55,3 @@ gantt
 | Intéressante | Comparer plusieurs méthodes pertinentes | Protocole commun et discussion des écarts |
 | Optionnelle | Ajouter une interface de démonstration | Parcours illustrant les résultats du prototype |
 | Optionnelle | Étendre à la structure du graphe ou à un second cas | Seulement après stabilisation du socle |
-
-EM et les données manquantes seront reclassés en nécessaires s'ils font partie
-du cas retenu ; aucun algorithme n'est imposé par ce planning.
-La rédaction et la documentation avancent dès le début, pas seulement en décembre.
